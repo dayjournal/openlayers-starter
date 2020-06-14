@@ -1,6 +1,6 @@
 {
     "name": "openlayers-starter",
-    "version": "6.2.1",
+    "version": "6.3.1",
     "description": "",
     "main": "main.js",
     "scripts": {
@@ -18,7 +18,7 @@
     "dependencies": {
         "css-loader": "^3.4.0",
         "file-loader": "^5.0.2",
-        "ol": "^6.2.1",
+        "ol": "^6.3.1",
         "style-loader": "^1.1.1",
         "url-loader": "^3.0.0"
     }

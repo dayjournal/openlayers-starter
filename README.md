@@ -5,7 +5,7 @@
 ![README05](img/README05.png)
 
 Start OpenLayers easily.  
-- [OpenLayers v6.2.1](https://openlayers.org) 
+- [OpenLayers v6.3.1](https://openlayers.org) 
 - [webpack v4.41.4](https://webpack.js.org)  
 - node v13.1.0
 - npm v6.13.0
@@ -77,7 +77,7 @@ Copyright (c) 2020 Yasunori Kirimoto
 ![README05](img/README05.png)
 
 OpenLayersを手軽に始める
-- [OpenLayers v6.2.1](https://openlayers.org) 
+- [OpenLayers v6.3.1](https://openlayers.org) 
 - [webpack v4.41.4](https://webpack.js.org)  
 - node v13.1.0
 - npm v6.13.0
