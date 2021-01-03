@@ -5,10 +5,10 @@
 ![README05](img/README05.png)
 
 Start OpenLayers easily.  
-- [OpenLayers v6.3.1](https://openlayers.org) 
-- [webpack v4.41.4](https://webpack.js.org)  
-- node v13.1.0
-- npm v6.13.0
+- [OpenLayers v6.5.0](https://openlayers.org) 
+- [webpack v5.11.1](https://webpack.js.org)  
+- node v15.5.0
+- npm v7.3.0
 
 <br>
 
@@ -19,31 +19,22 @@ Start OpenLayers easily.
 <br>
 
 Install package
-
-```
-
+```bash
 npm install
-
 ```
 
 <br>
 
 build
-
-```
-
+```bash
 npm run build
-
 ```
 
 <br>
 
 dev
-
-```
-
+```bash
 npm run dev
-
 ```
 
 ---
@@ -58,7 +49,7 @@ npm run dev
 ## License
 MIT
 
-Copyright (c) 2020 Yasunori Kirimoto
+Copyright (c) 2019-2021 Yasunori Kirimoto
 
 <br>
 
@@ -77,10 +68,10 @@ Copyright (c) 2020 Yasunori Kirimoto
 ![README05](img/README05.png)
 
 OpenLayersを手軽に始める
-- [OpenLayers v6.3.1](https://openlayers.org) 
-- [webpack v4.41.4](https://webpack.js.org)  
-- node v13.1.0
-- npm v6.13.0
+- [OpenLayers v6.5.0](https://openlayers.org) 
+- [webpack v5.11.1](https://webpack.js.org)  
+- node v15.5.0
+- npm v7.3.0
 
 <br>
 
@@ -92,29 +83,24 @@ OpenLayersを手軽に始める
 
 パッケージインストール
 
-```
-
+```bash
 npm install
-
 ```
 
 <br>
 
 ビルド
 
-```
-
+```bash
 npm run build
-
 ```
 
 <br>
 
 開発
 
-```
+```bash
 npm run dev
-
 ```
 
 <br>
@@ -127,6 +113,6 @@ npm run dev
 ## ライセンス
 MIT
 
-Copyright (c) 2020 Yasunori Kirimoto
+Copyright (c) 2019-2021 Yasunori Kirimoto
 
 <br>
