@@ -5,10 +5,10 @@
 ![README05](img/README05.png)
 
 Start OpenLayers easily.  
-- [OpenLayers v6.9.0](https://openlayers.org) 
+- [OpenLayers v6.13.0](https://openlayers.org) 
 - [webpack v5.49.0](https://webpack.js.org)  
-- node v16.3.0
-- npm v7.15.1
+- node v16.10.0
+- npm v7.24.0
 
 <br>
 
@@ -49,7 +49,7 @@ npm run dev
 ## License
 MIT
 
-Copyright (c) 2019-2021 Yasunori Kirimoto
+Copyright (c) 2019-2022 Yasunori Kirimoto
 
 <br>
 
@@ -68,10 +68,10 @@ Copyright (c) 2019-2021 Yasunori Kirimoto
 ![README05](img/README05.png)
 
 OpenLayersを手軽に始める
-- [OpenLayers v6.9.0](https://openlayers.org) 
+- [OpenLayers v6.13.0](https://openlayers.org)
 - [webpack v5.49.0](https://webpack.js.org)  
-- node v16.3.0
-- npm v7.15.1
+- node v16.10.0
+- npm v7.24.0
 
 <br>
 
@@ -113,6 +113,6 @@ npm run dev
 ## ライセンス
 MIT
 
-Copyright (c) 2019-2021 Yasunori Kirimoto
+Copyright (c) 2019-2022 Yasunori Kirimoto
 
 <br>
