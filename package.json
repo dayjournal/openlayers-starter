@@ -1,26 +1,20 @@
 {
-    "name": "openlayers-starter",
-    "version": "6.13.0",
-    "description": "",
-    "main": "main.js",
-    "scripts": {
-        "build": "webpack --mode=production",
-        "dev": "webpack serve --mode=development"
-    },
-    "keywords": [],
-    "author": "Yasunori Kirimoto",
-    "license": "ISC",
-    "devDependencies": {
-        "webpack": "^5.49.0",
-        "webpack-cli": "^4.7.2",
-        "webpack-dev-server": "^3.11.2"
-    },
-    "dependencies": {
-        "css-loader": "^6.2.0",
-        "file-loader": "^6.2.0",
-        "ol": "^6.13.0",
-        "style-loader": "^3.2.1",
-        "url-loader": "^4.1.1"
-    },
-    "private": true
+  "name": "openlayers-starter",
+  "version": "6.14.1",
+  "description": "",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "Yasunori Kirimoto",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.5.4",
+    "vite": "^2.9.9"
+  },
+  "dependencies": {
+    "ol": "^6.14.1"
+  }
 }

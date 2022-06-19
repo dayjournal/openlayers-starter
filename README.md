@@ -2,19 +2,18 @@
 
 ![README02](img/README02.png)
 
-![README05](img/README05.png)
-
 Start OpenLayers easily.  
-- [OpenLayers v6.13.0](https://openlayers.org) 
-- [webpack v5.49.0](https://webpack.js.org)  
-- node v16.10.0
-- npm v7.24.0
+- [OpenLayers v6.14.1](https://openlayers.org)  
+- [TypeScript v4.5.4](https://www.typescriptlang.org)  
+- [Vite v2.9.9](https://vitejs.dev)  
+- node v18.1.0
+- npm v8.8.0
 
 <br>
 
 ## Usage
 
-![README04](img/README04.png)
+![README03](img/README03.png)
 
 <br>
 
@@ -65,19 +64,18 @@ Copyright (c) 2019-2022 Yasunori Kirimoto
 
 ![README02](img/README02.png)
 
-![README05](img/README05.png)
-
 OpenLayersを手軽に始める
-- [OpenLayers v6.13.0](https://openlayers.org)
-- [webpack v5.49.0](https://webpack.js.org)  
-- node v16.10.0
-- npm v7.24.0
+- [OpenLayers v6.14.1](https://openlayers.org)  
+- [TypeScript v4.5.4](https://www.typescriptlang.org)  
+- [Vite v2.9.9](https://vitejs.dev)  
+- node v18.1.0
+- npm v8.8.0
 
 <br>
 
 ##  使用方法
 
-![README04](img/README04.png)
+![README03](img/README03.png)
 
 <br>
 
