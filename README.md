@@ -3,9 +3,9 @@
 ![README02](img/README02.png)
 
 Start OpenLayers easily.  
-- [OpenLayers v7.1.0](https://openlayers.org)  
-- [TypeScript v4.8.4](https://www.typescriptlang.org)  
-- [Vite v3.2.1](https://vitejs.dev)  
+- [OpenLayers v7.3.0](https://openlayers.org)  
+- [TypeScript v5.0.4](https://www.typescriptlang.org)  
+- [Vite v4.3.5](https://vitejs.dev)  
 - node v18.1.0
 - npm v8.19.2
 
@@ -48,7 +48,7 @@ npm run dev
 ## License
 MIT
 
-Copyright (c) 2019-2022 Yasunori Kirimoto
+Copyright (c) 2019-2023 Yasunori Kirimoto
 
 <br>
 
@@ -65,9 +65,9 @@ Copyright (c) 2019-2022 Yasunori Kirimoto
 ![README02](img/README02.png)
 
 OpenLayersを手軽に始める
-- [OpenLayers v7.1.0](https://openlayers.org)  
-- [TypeScript v4.8.4](https://www.typescriptlang.org)  
-- [Vite v3.2.1](https://vitejs.dev)  
+- [OpenLayers v7.3.0](https://openlayers.org)  
+- [TypeScript v5.0.4](https://www.typescriptlang.org)  
+- [Vite v4.3.5](https://vitejs.dev)  
 - node v18.1.0
 - npm v8.19.2
 
@@ -111,6 +111,6 @@ npm run dev
 ## ライセンス
 MIT
 
-Copyright (c) 2019-2022 Yasunori Kirimoto
+Copyright (c) 2019-2023 Yasunori Kirimoto
 
 <br>
