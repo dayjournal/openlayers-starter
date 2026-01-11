@@ -1,6 +1,6 @@
 {
   "name": "openlayers-starter",
-  "version": "8.2.0",
+  "version": "10.7.0",
   "description": "",
   "scripts": {
     "dev": "vite",
@@ -9,12 +9,12 @@
   },
   "keywords": [],
   "author": "Yasunori Kirimoto",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
-    "typescript": "^5.3.3",
-    "vite": "^5.1.7"
+    "typescript": "^5.9.3",
+    "vite": "^7.3.1"
   },
   "dependencies": {
-    "ol": "^8.2.0"
+    "ol": "^10.7.0"
   }
 }
