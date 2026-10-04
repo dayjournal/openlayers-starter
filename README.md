@@ -5,9 +5,9 @@
 Start OpenLayers easily.  
 - [OpenLayers v10.7.0](https://openlayers.org)  
 - [TypeScript v5.9.3](https://www.typescriptlang.org)  
-- [Vite v7.3.1](https://vitejs.dev)  
+- [Vite v7.3.6](https://vitejs.dev)  
 - node v24.4.1
-- npm v11.4.2
+- pnpm v11.9.0
 
 <br>
 
@@ -19,21 +19,35 @@ Start OpenLayers easily.
 
 Install package
 ```bash
-npm install
+pnpm install
 ```
 
 <br>
 
 build
 ```bash
-npm run build
+pnpm run build
 ```
 
 <br>
 
 dev
 ```bash
-npm run dev
+pnpm run dev
+```
+
+<br>
+
+test
+
+Install Chromium before the first test run.
+
+```bash
+pnpm exec playwright install chromium
+```
+
+```bash
+pnpm test
 ```
 
 ---
@@ -67,9 +81,9 @@ Copyright (c) 2019-2026 Yasunori Kirimoto
 OpenLayersを手軽に始める
 - [OpenLayers v10.7.0](https://openlayers.org)  
 - [TypeScript v5.9.3](https://www.typescriptlang.org)  
-- [Vite v7.3.1](https://vitejs.dev)  
+- [Vite v7.3.6](https://vitejs.dev)  
 - node v24.4.1
-- npm v11.4.2
+- pnpm v11.9.0
 
 <br>
 
@@ -82,7 +96,7 @@ OpenLayersを手軽に始める
 パッケージインストール
 
 ```bash
-npm install
+pnpm install
 ```
 
 <br>
@@ -90,7 +104,7 @@ npm install
 ビルド
 
 ```bash
-npm run build
+pnpm run build
 ```
 
 <br>
@@ -98,7 +112,21 @@ npm run build
 開発
 
 ```bash
-npm run dev
+pnpm run dev
+```
+
+<br>
+
+テスト
+
+初回はテスト用の Chromium をインストールしてください。
+
+```bash
+pnpm exec playwright install chromium
+```
+
+```bash
+pnpm test
 ```
 
 <br>

@@ -1,4 +1,4 @@
-import './style.css'
+import './style.css';
 import 'ol/ol.css';
 import Map from 'ol/Map';
 import View from 'ol/View';
@@ -28,6 +28,8 @@ const map = new Map({
     }),
 });
 
-map.addControl(new ScaleLine({
-    units: 'metric'
-}));
+map.addControl(
+    new ScaleLine({
+        units: 'metric',
+    })
+);
