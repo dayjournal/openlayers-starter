@@ -3,9 +3,9 @@
 ![README02](img/README02.png)
 
 Start OpenLayers easily.  
-- [OpenLayers v10.7.0](https://openlayers.org)  
-- [TypeScript v5.9.3](https://www.typescriptlang.org)  
-- [Vite v7.3.6](https://vitejs.dev)  
+- [OpenLayers v10.10.0](https://openlayers.org)  
+- [TypeScript v7.0.2](https://www.typescriptlang.org)  
+- [Vite v8.3.1](https://vitejs.dev)  
 - node v24.4.1
 - pnpm v11.9.0
 
@@ -79,9 +79,9 @@ Copyright (c) 2019-2026 Yasunori Kirimoto
 ![README02](img/README02.png)
 
 OpenLayersを手軽に始める
-- [OpenLayers v10.7.0](https://openlayers.org)  
-- [TypeScript v5.9.3](https://www.typescriptlang.org)  
-- [Vite v7.3.6](https://vitejs.dev)  
+- [OpenLayers v10.10.0](https://openlayers.org)  
+- [TypeScript v7.0.2](https://www.typescriptlang.org)  
+- [Vite v8.3.1](https://vitejs.dev)  
 - node v24.4.1
 - pnpm v11.9.0
 
