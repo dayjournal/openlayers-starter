@@ -1,6 +1,6 @@
 {
   "name": "openlayers-starter",
-  "version": "10.7.1",
+  "version": "10.10.0",
   "private": true,
   "description": "",
   "scripts": {
@@ -20,11 +20,11 @@
     "@playwright/test": "^1.58.0",
     "@types/node": "^24.10.1",
     "prettier": "^3.8.4",
-    "typescript": "^5.9.3",
-    "vite": "^7.3.6"
+    "typescript": "^7.0.2",
+    "vite": "^8.3.1"
   },
   "dependencies": {
-    "ol": "^10.7.0"
+    "ol": "^10.10.0"
   },
   "packageManager": "pnpm@11.9.0+sha512.bd682d5d03fe525ef7c9fd6780c6884d1e756ac4c9c9fe00c538782824310dcf90e3ddc4f53835f06dfaebd5085e41855e0bcbb3b60de2ac5bbab89e5036f03b"
 }
