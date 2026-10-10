@@ -4,6 +4,20 @@
 The tests serve these files locally so screenshots do not depend on the network.
 Requests without a saved tile use `fallback.png`.
 
+Every request is validated before the fixture response: `{z}/{x}/{y}` must be
+non-negative safe integers, with `x < 2 ** z` and `y < 2 ** z` for Web Mercator.
+Both smoke and visual tests observe the actual `Image` objects created by the
+app, including images outside the DOM. Every requested tile image must finish
+loading with nonzero width and be passed to the map canvas's `drawImage` at full
+opacity. Image errors are also checked at teardown.
+
+Playwright installs these observers before the app starts, forwarding calls to
+the native `Image` constructor and `drawImage` method. The observers and their
+types live entirely in `e2e/_helpers.ts`; the app needs no test-specific code.
+This check targets the current fixed view and Canvas 2D tile renderer. Revisit
+it when adding preloading, view changes, or a different renderer. The visual
+test compares the resulting pixels with the existing baseline.
+
 ## Update map tiles
 
 When the map center, zoom, or viewport changes:
