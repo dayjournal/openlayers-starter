@@ -58,6 +58,21 @@ Tests cover the site root and `/openlayers-starter/` with local tile fixtures. T
 
 <br>
 
+GitHub Pages
+
+After CI succeeds for a push to `main`, `.github/workflows/pages.yml` builds that tested commit and deploys `dist/`. Pull requests and failed CI runs do not trigger an automatic deployment. Set the repository's Pages source to **GitHub Actions** and restrict the `github-pages` environment to `main`; see [the setup steps](.github/AUTOMATION.md#github-pages).
+
+The workflow sets `VITE_BASE` to `/<repository-name>/` and uses the existing Vite configuration. To preview the Pages build locally:
+
+```bash
+VITE_BASE=/openlayers-starter/ pnpm run build
+pnpm run preview --base /openlayers-starter/
+```
+
+`build:ghpages` remains available for local checks using `docs/`, and `VITE_OUTDIR` still supports custom output directories. The automatic deployment uses `dist/` and does not require rebuilding or committing `docs/`.
+
+<br>
+
 format
 
 `pnpm run format:check` checks formatting without rewriting files.
@@ -150,6 +165,21 @@ pnpm test
 ローカルのタイルfixtureを使い、サイトのルートと`/openlayers-starter/`配下を検査します。サブパス用のビルド先は`dist-subpath/`です。
 
 `pnpm run test:visual`は両方の表示をローカルのベースラインと比較します。地図を目で確認したあと、`pnpm run test:visual:update`で明示的にベースラインを作成します。ベースラインがない場合はファイルを作成せず失敗します。
+
+<br>
+
+GitHub Pages
+
+`main`へのpushに対するCIが成功すると、`.github/workflows/pages.yml`がCIで検証したコミットをビルドし、`dist/`を自動公開します。PRやCI失敗時には自動公開しません。リポジトリのPages公開元を**GitHub Actions**に変更し、`github-pages`環境の公開対象を`main`に限定してください。[設定手順](.github/AUTOMATION.md#github-pages)を参照してください。
+
+ワークフローは`VITE_BASE`に`/<リポジトリ名>/`を指定し、既存のVite設定でビルドします。Pages用ビルドをローカルで確認する場合:
+
+```bash
+VITE_BASE=/openlayers-starter/ pnpm run build
+pnpm run preview --base /openlayers-starter/
+```
+
+`build:ghpages`は`docs/`を使ったローカル確認用に残し、`VITE_OUTDIR`による出力先の指定も維持しています。自動公開は`dist/`を使用するため、`docs/`の再生成やコミットは不要です。
 
 <br>
 

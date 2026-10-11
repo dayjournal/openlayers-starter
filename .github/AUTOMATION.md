@@ -32,11 +32,12 @@ Edit for the repository:
 Remove: the root `package-lock.json`, any older update workflow or script, a tracked
 `artifacts/` folder.
 
-Optional: leaflet-starter's `.github/workflows/pages.yml` deploys the demo from
-CI. It needs the Pages source set to "GitHub Actions"; when switching, delete
-the committed `docs/` build and the script that produced it. A starter that
-keeps `docs/` has to rebuild and commit it by hand after each bot merge: the
-bot only commits package.json, the lockfile, README and the two screenshots.
+Optional: `.github/workflows/pages.yml` builds and deploys `dist/` after CI
+succeeds on main. Adapt its build step to the library's base-path handling;
+see [GitHub Pages](#github-pages). Legacy `docs/` builds and their scripts may
+remain for local compatibility checks, but the Actions deployment does not
+use them or require generated files to be committed. Without this workflow,
+a starter that publishes `docs/` from a branch still needs manual rebuilds.
 
 ## What the repository must have
 
@@ -94,6 +95,43 @@ resulting main commit, and Release creates its tag and release.
 A dry run does not issue an App token or exercise PR creation, auto-merge,
 main CI or Release. A run with no updates skips this path too, so neither
 confirms setup. Checking that `schedule` fires is a separate check.
+
+## GitHub Pages
+
+For repositories with `workflows/pages.yml`, automatic deployment follows a
+successful `CI` run for a push to this repository's `main`. The build checks
+out the exact commit CI validated. PRs (including a fork branch named `main`),
+failed CI and cancelled CI do not trigger an automatic deployment. GitHub
+Release creation and Pages deployment are separate workflows.
+
+Before merging the Pages workflow:
+
+1. In **Settings > Pages > Build and deployment**, change **Source** from
+   **Deploy from a branch** to **GitHub Actions**. Do not add another suggested
+   Jekyll or static-site workflow; `workflows/pages.yml` handles deployment.
+2. In **Settings > Environments > github-pages**, set **Deployment branches
+   and tags** to **Selected branches and tags** and allow the `main` branch.
+   Keep this restriction if it already exists. Fully automatic publication
+   requires an environment without a manual approval requirement.
+3. Ensure Actions is enabled and the actions pinned in `pages.yml` are allowed
+   by the repository/organization policy. The default workflow permission can
+   remain read-only: only the separate deploy job requests `pages: write` and
+   `id-token: write`. Pages does not need a PAT, the dependency-update App key,
+   or additional secrets.
+4. Merge the workflow into `main`, then check that the main push's `CI` succeeds
+   and `Deploy GitHub Pages` completes. If the Pages settings were changed after
+   that run, re-run CI for the latest main push. For an intentional manual
+   redeployment, select `main` in the Pages workflow's **Run workflow** menu
+   after checking its CI result.
+
+The build publishes `dist/`. Leaflet and OpenLayers set `VITE_BASE` to the
+repository path. Cesium keeps its relative `base: './'` so the plugin's runtime
+assets are copied and resolved correctly. Keep those library-specific build
+steps when sharing this workflow. Retained `docs/` scripts are local checks,
+not part of the automatic publication path.
+
+References: [Pages source settings](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
+and [custom Pages workflows](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages).
 
 ## Checking update results
 
