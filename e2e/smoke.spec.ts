@@ -10,7 +10,7 @@ import {
 test('smoke: OpenLayers renders loaded tiles', async ({ page }) => {
     const tileUrls = await stabilizeTileRequests(page);
 
-    await page.goto('/');
+    await page.goto('./');
     await expect(page.locator('#map')).toBeVisible();
 
     // OpenLayers adds the layer's canvas to #map on its first render, so this

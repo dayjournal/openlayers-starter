@@ -1,6 +1,6 @@
 {
   "name": "openlayers-starter",
-  "version": "10.10.0.1",
+  "version": "10.10.0.2",
   "private": true,
   "description": "",
   "scripts": {
@@ -11,15 +11,16 @@
     "test": "pnpm run build && playwright test e2e/smoke.spec.ts",
     "test:visual": "pnpm run build && playwright test e2e/visual.spec.ts",
     "test:visual:update": "pnpm run build && playwright test e2e/visual.spec.ts --update-snapshots",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
   },
   "keywords": [],
   "author": "Yasunori Kirimoto",
   "license": "MIT",
   "devDependencies": {
-    "@playwright/test": "^1.58.0",
-    "@types/node": "^24.10.1",
-    "prettier": "^3.8.4",
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^24.19.1",
+    "prettier": "^3.9.9",
     "typescript": "^7.0.2",
     "vite": "^8.3.2"
   },

@@ -6,7 +6,7 @@ Start OpenLayers easily.
 - [OpenLayers v10.10.0](https://openlayers.org)  
 - [TypeScript v7.0.2](https://www.typescriptlang.org)  
 - [Vite v8.3.2](https://vitejs.dev)  
-- node v24.4.1
+- node v24.21.0
 - pnpm v11.9.0
 
 <br>
@@ -18,8 +18,10 @@ Start OpenLayers easily.
 <br>
 
 Install package
+
+Use Node.js v24.21.0 (`.node-version`) and pnpm v11.9.0 (`packageManager`). Install pnpm with `npm install --global pnpm@11.9.0` if needed.
 ```bash
-pnpm install
+pnpm install --frozen-lockfile
 ```
 
 <br>
@@ -48,6 +50,20 @@ pnpm exec playwright install chromium
 
 ```bash
 pnpm test
+```
+
+Tests cover the site root and `/openlayers-starter/` with local tile fixtures. The subpath build is written to `dist-subpath/`.
+
+`pnpm run test:visual` compares both views with local baselines. Check the map by eye, then create the baselines explicitly with `pnpm run test:visual:update`. A missing baseline fails without creating a file.
+
+<br>
+
+format
+
+`pnpm run format:check` checks formatting without rewriting files.
+
+```bash
+pnpm run format
 ```
 
 ---
@@ -82,7 +98,7 @@ OpenLayersを手軽に始める
 - [OpenLayers v10.10.0](https://openlayers.org)  
 - [TypeScript v7.0.2](https://www.typescriptlang.org)  
 - [Vite v8.3.2](https://vitejs.dev)  
-- node v24.4.1
+- node v24.21.0
 - pnpm v11.9.0
 
 <br>
@@ -95,8 +111,10 @@ OpenLayersを手軽に始める
 
 パッケージインストール
 
+Node.js v24.21.0（`.node-version`）とpnpm v11.9.0（`packageManager`）を使用します。pnpm未導入の場合は`npm install --global pnpm@11.9.0`で導入します。
+
 ```bash
-pnpm install
+pnpm install --frozen-lockfile
 ```
 
 <br>
@@ -127,6 +145,20 @@ pnpm exec playwright install chromium
 
 ```bash
 pnpm test
+```
+
+ローカルのタイルfixtureを使い、サイトのルートと`/openlayers-starter/`配下を検査します。サブパス用のビルド先は`dist-subpath/`です。
+
+`pnpm run test:visual`は両方の表示をローカルのベースラインと比較します。地図を目で確認したあと、`pnpm run test:visual:update`で明示的にベースラインを作成します。ベースラインがない場合はファイルを作成せず失敗します。
+
+<br>
+
+整形
+
+`pnpm run format:check`は、ファイルを書き換えずに整形を確認します。
+
+```bash
+pnpm run format
 ```
 
 <br>
