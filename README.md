@@ -69,7 +69,13 @@ VITE_BASE=/openlayers-starter/ pnpm run build
 pnpm run preview --base /openlayers-starter/
 ```
 
-`build:ghpages` remains available for local checks using `docs/`, and `VITE_OUTDIR` still supports custom output directories. The automatic deployment uses `dist/` and does not require rebuilding or committing `docs/`.
+`build:ghpages` remains available for local checks using `docs/`, and `VITE_OUTDIR` still supports custom output directories. The automatic deployment uses `dist/`. Generated `dist/` and `docs/` files are ignored and are not committed.
+
+<br>
+
+Maintenance
+
+For tools outside the daily dependency updates (Playwright, Node.js types, Prettier, Node.js and pnpm), follow [the manual update procedure](.github/AUTOMATION.md#manual-tooling-updates).
 
 <br>
 
@@ -179,7 +185,13 @@ VITE_BASE=/openlayers-starter/ pnpm run build
 pnpm run preview --base /openlayers-starter/
 ```
 
-`build:ghpages`は`docs/`を使ったローカル確認用に残し、`VITE_OUTDIR`による出力先の指定も維持しています。自動公開は`dist/`を使用するため、`docs/`の再生成やコミットは不要です。
+`build:ghpages`は`docs/`を使ったローカル確認用に残し、`VITE_OUTDIR`による出力先の指定も維持しています。自動公開は`dist/`を使用します。生成された`dist/`と`docs/`はGitの管理対象外で、コミットしません。
+
+<br>
+
+保守
+
+日次の依存関係更新に含まれないPlaywright、Node.jsの型定義、Prettier、Node.js、pnpmは、[手動更新手順](.github/AUTOMATION.md#manual-tooling-updates)に沿って確認・更新します。
 
 <br>
 
