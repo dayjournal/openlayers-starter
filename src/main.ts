@@ -14,7 +14,7 @@ const map = new Map({
             source: new XYZ({
                 url: 'https://tile.mierune.co.jp/mierune_mono/{z}/{x}/{y}.png',
                 attributions:
-                    'Maptiles by <a href="http://mierune.co.jp" target="_blank">MIERUNE</a>, under CC BY. Data by <a href="http://osm.org/copyright" target="_blank">OpenStreetMap</a> contributors, under ODbL.',
+                    'Maptiles by <a href="https://mierune.co.jp" target="_blank">MIERUNE</a>, under CC BY. Data by <a href="https://osm.org/copyright" target="_blank">OpenStreetMap</a> contributors, under ODbL.',
                 attributionsCollapsible: false,
                 tileSize: [256, 256],
                 minZoom: 0,
